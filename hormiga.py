@@ -2,13 +2,13 @@ import random
 import numpy as np
 from tkinter import PhotoImage
 
-class Hormiga:
+class hormiga:
     def __init__(self, canvas, x, y):
         # Atributos de la hormiga
         self.name = "hormiga"
         self.canvas = canvas
         # Posición inicial como vector columna
-        self.posicion = np.array([[x], [y]])
+        self.posicion = np.array([[x//30], [y//30]])
         self.salud = 100
         self.nivel_alcohol = 0
         self.puntos = 0
